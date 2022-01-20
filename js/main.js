@@ -60,7 +60,7 @@ function renderBill(name, km, time, price1, price2, price3, priceTime) {
   quantityKM1.innerHTML = km < 1 ? km : 1;
   if (km - 1 > 0 && km <= 20) {
     quantityKM2.innerHTML = km - 1;
-  } else if (km - 1 > 20) {
+  } else if (km > 20) {
     quantityKM2.innerHTML = 19;
   }
   quantityKM3.innerHTML = km - 20 > 0 ? km - 20 : 0;
